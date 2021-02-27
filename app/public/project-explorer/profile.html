@@ -31,36 +31,30 @@
 
        <section>
             <h2>Update Profile</h2>
-           <form action="" name="updateProfile">
-                <label for="">First Name: </label><br><br>
-                <input type="text" name="firstName">
-                <label for="">Last Name: </label><br><br>
-                <input type="text" name="lastName">
-                <label for="">Email: </label><br><br>
-                <input type="email" name="email">
-                <label for="">Password: </label><br><br>
-                <input type="password" name="password">
-                <label for="">Matric Number: </label><br><br>
-                <input type="text" name="matricNumber">
-
-                <label for=""> Program:</label>
-                <select name="program"  id="">
+           <form name="updateProfile">
+                <label>First Name: </label><input type="text" name="firstName"><br>
+                <label>Last Name: </label><input type="text" name="lastName"><br>
+                <label>Email: </label><br><br><input type="email" name="email"><br>
+                <label>Password: </label><br><br><input type="password" name="password"><br>
+                <label>Matric Number: </label><input type="text" name="matricNumber"><br>
+                <label> Program:</label>
+                <select name="program">
                     <option value="computer_science">Computer Science</option>
-                    <option value="computer_information_systems">Computer Information System</option>
+                    <option value="computer_information_systems">Computer Information Systems</option>
                     <option value="computer_technology">Computer Technology</option>
-                </select><br><br>
+                </select><br>
 
                 <label for="">Year of Graduation:</label>
                 <select name="graduationYear" id="">
                     <option value="2013">2013</option>
-                    <option value="2013">2014</option>
-                    <option value="2013">2015</option>
-                    <option value="2013">2016</option>
-                    <option value="2013">2017</option>
-                    <option value="2013">2018</option>
-                    <option value="2013">2019</option>
-                    <option value="2013">2020</option>
-                </select>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select><br>
             </form>
        </section>
 
@@ -68,12 +62,9 @@
        <section>
            <h2>Change Password</h2>
            <form action="" name="changePassword">
-               <label for="">Current Password:</label><br><br>
-               <input type="password" name="currentPassword">
-               <label for="">New Password:</label><br><br>
-               <input type="password" name="newPassword">
-               <label for="">Confirm Password: </label><br><br>
-               <input type="password" name="confirmPassword"><br><br>
+               <label for="">Current Password:</label><input type="password" name="currentPassword"><br>
+               <label for="">New Password:</label><input type="password" name="newPassword"><br>
+               <label for="">Confirm Password:</label><input type="password" name="confirmPassword"><br>
                <input type="submit">
            </form>
        </section>

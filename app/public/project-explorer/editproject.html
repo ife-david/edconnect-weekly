@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Project Explorer</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <form class="form-inline" name="searchForm">
+                            <input type="search" placeholder="Search Projects" class="form-control mr-2" aria-label="search">
+                            <button class="btn btn-outline-light">Search</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="createproject.html">Submit</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html">Sign up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                            
+                
+        </nav>
+
+
+    <main>
+
+        <section class="container p-3 bg-light mt-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Created by</li>
+                        <li>Ade Chris</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Date Created</li>
+                        <li>2020-08-30</li>
+                    </ul>
+                </div>
+                 <div class="col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Last Updated</li>
+                        <li>2020-08-30</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="d-flex justify-content-end">
+                        <a href="viewproject.html" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-4">
+            
+
+            <form action="" name="editProject">
+                <div class="form-group container form-row">
+                        <div class="col-md-6">
+                                <h1>Edit Project</h1>
+                                <hr>
+                                <label class="form-label">Project Name</label><br>
+                                <input type="text" class="form-control" placeholder="Project 1" name="name"><br>
+                                <label class="form-label">Project Abstract</label><br>
+                                <textarea name="abstract" class="form-control" placeholder="Project 1 is a very interesting project" cols="30" rows="10" type="text"></textarea><br>
+                                <label class="form-label">Author(s)</label><br>
+                                <input type="text" class="form-control" placeholder="Ade Chris" name="authors"><br>
+                                <label class="form-label">Tag(s)</label><br>
+                                <input type="text" class="form-control" placeholder="#web" name="tags"><br>
+                                <button class="btn btn-primary">Save</button>
+
+                                
+                        </div><br>
+                        <div class="col-md-6 mt-3">
+                                <label class="form-label">Manage Project files File</label>
+                                <hr>
+                                <div class="form-group">
+                                    <input class="form-control" type="file"  id="formFile" name="projectFile">
+                                </div><hr>
+
+                                <div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Project Files
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text text-center">No files uploaded yet</p>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="container bg-light my-3 py-3 d-flex justify-content-end">
+            <p class="text-secondary">
+                Project Explorer &#169; 2020 .
+                <span class="text-dark"> Edconnect</span>
+            </p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
